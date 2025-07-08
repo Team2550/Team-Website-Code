@@ -1,6 +1,11 @@
+/* Variables */
+:root {
+  --skynet-red: #ea3323;
+}
+
 body {
   background: #000;
-  color:  #fff;
+  color: #fff;
 }
 
 .center {
@@ -8,4 +13,12 @@ body {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.btn {
+  color: #fff;
+  text-decoration: none;
+  background: var(--skynet-red);
+  border-radius: 50px;
+  padding: 5px 10px;
 }
