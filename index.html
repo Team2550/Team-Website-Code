@@ -1,18 +1,71 @@
 <link rel="stylesheet" type="text/css" href="css/main.css" />
 <body>
-  <nav>
-    <a
-      href="https://www.paypal.com/donate/?hosted_button_id=GY4PR27NB6L28"
-      class="btn"
-      >Dontate</a
-    >
-  </nav>
-  <div class="center">
-    <img src="media/images/skynet-logo.svg" />
-    <h1>Skynet - Team 2550</h1>
-    <img
-      src="media/images/salem-victory-teams.webp"
-      alt="Skynet team with alliance teams and vicotry banner after winning first place at Salem 2025 tournament"
-    />
+  <div class="content">
+    <div class="center">
+      <img src="media/images/skynet-logo.svg" alt="Skynet Logo" />
+      <h1>Skynet - Team 2550</h1>
+      <nav>
+        <a
+          href="https://www.paypal.com/donate/?hosted_button_id=GY4PR27NB6L28"
+          class="btn"
+          >Donate</a
+        >
+      </nav>
+      <img
+        src="media/images/salem-victory-teams.webp"
+        alt="Skynet team with alliance teams and vicotry banner after winning first place at Salem 2025 tournament"
+      />
+    </div>
+    <p>
+      At Skynet, we believe in nurturing future-ready innovators—engineers,
+      programmers, builders, communicators—through hands-on robotics and
+      teamwork. Whether you're coding in C++, designing in CAD, strategizing a
+      scouting campaign, or crafting a business plan, you’ll find your place on
+      our team. No prior experience? No problem—our diverse roles mean there’s
+      room for everyone.
+    </p>
+    <h2>Contact Information</h2>
+    <p>
+      Phone: <a href="tel:503.785.7860">503.785.7860</a><br />
+      Email:
+      <a href="mailto:michael.busse@orecity.k12.or.us"
+        >michael.busse@orecity.k12.or.us</a
+      ><br />
+      <a href="mailto:team2550robotics@gmail.com">team2550robotics@gmail.com</a>
+    </p>
+    <p>
+      School Address:<br />
+      1306 12th St. <br />
+      Oregon City, OR. 97045
+    </p>
+    <iframe
+      allowtransparency="false"
+      frameborder="0"
+      id="JotFormIFrame"
+      onload="window.parent.scrollTo(0,0)"
+      scrolling="yes"
+      src="http://form.jotform.us/form/41348060981152"
+      style="border: none; height: 842px; width: 100%"
+    ></iframe>
+    <script type="text/javascript">
+      window.handleIFrameMessage = function (e) {
+        var args = e.data.split(":");
+        var iframe = document.getElementById("JotFormIFrame");
+        if (!iframe) return;
+        switch (args[0]) {
+          case "scrollIntoView":
+            iframe.scrollIntoView();
+            break;
+          case "setHeight":
+            iframe.style.height = args[1] + "px";
+            break;
+        }
+      };
+      if (window.addEventListener) {
+        window.addEventListener("message", handleIFrameMessage, false);
+      } else if (window.attachEvent) {
+        window.attachEvent("onmessage", handleIFrameMessage);
+      }
+    </script>
   </div>
 </body>
