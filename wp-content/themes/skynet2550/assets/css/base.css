@@ -1,0 +1,194 @@
+/* ========================================
+   Font Face Declarations
+   ======================================== */
+
+@font-face {
+  font-family: 'New Academy';
+  src: url('/wp-content/themes/skynet2550/assets/fonts/new-academy.woff2') format('woff2');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+/* ========================================
+   CSS Reset Rules
+   ======================================== */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Remove default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role */
+ul[role='list'],
+ol[role='list'] {
+  list-style: none;
+}
+
+/* Set core root defaults */
+html:focus-within {
+  scroll-behavior: smooth;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  text-rendering: optimizeSpeed;
+  line-height: 1.5;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+}
+
+/* Make images easier to work with */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+
+/* Remove all animations, transitions and smooth scroll for people that prefer not to see them */
+@media (prefers-reduced-motion: reduce) {
+  html:focus-within {
+    scroll-behavior: auto;
+  }
+
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+/* Remove default button styles */
+button {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+}
+
+/* Remove default table spacing */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* Remove default fieldset styles */
+fieldset {
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Remove default quote styles */
+blockquote,
+q {
+  quotes: none;
+}
+
+blockquote::before,
+blockquote::after,
+q::before,
+q::after {
+  content: '';
+  content: none;
+}
+
+
+/* ========================================
+   Base CSS Variables
+   ======================================== */
+
+ :root {
+    --border-radius--large: 25px;
+    --border-radius--small: 10px;
+    --box-shadow--large: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+    --box-shadow--small: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+ }
+
+/* ========================================
+   Base CSS Standards
+   ======================================== */
+
+/* Typography */
+body {
+  font-family: var(--wp--preset--font-family--base-font);
+  color: var(--wp--preset--color--primary);
+  background-color: var(--wp--preset--color--background);
+}
+
+/* Headings */
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: var(--wp--preset--font-family--heading-font);
+  color: var(--wp--preset--color--secondary);
+  font-weight: normal;
+}
+
+/* Links */
+a {
+  color: var(--wp--preset--color--tertiary);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover,
+a:focus {
+  color: var(--wp--preset--color--secondary);
+}
+
+/* Buttons */
+button,
+.button,
+input[type="submit"],
+input[type="button"] {
+  background-color: var(--wp--preset--color--tertiary);
+  color: var(--wp--preset--color--primary);
+  transition: background-color 0.2s ease;
+}
+
+button:hover,
+button:focus,
+.button:hover,
+.button:focus,
+input[type="submit"]:hover,
+input[type="submit"]:focus,
+input[type="button"]:hover,
+input[type="button"]:focus {
+  background-color: var(--wp--preset--color--secondary);
+}
+
+img {
+  border-radius: var(--border-radius--large);
+  box-shadow: var(--box-shadow--large);
+}
