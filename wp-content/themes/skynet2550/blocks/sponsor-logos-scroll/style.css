@@ -40,6 +40,7 @@
   width: auto;
   height: auto;
   object-fit: contain;
+  border-radius: 0;
 }
 
 .sponsor-logos-scroll__item a {
