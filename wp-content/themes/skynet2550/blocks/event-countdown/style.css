@@ -1,0 +1,49 @@
+/**
+ * Event Countdown Block - Front-end styles
+ */
+
+.wp-block-skynet2550-event-countdown.event-countdown {
+  padding: 1.5rem 0;
+}
+
+.event-countdown__name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  text-align: center;
+  color: var(--wp--preset--color--contrast, currentColor);
+  margin-bottom: 1rem;
+}
+
+.event-countdown__name:empty {
+  display: none;
+}
+
+.event-countdown__timer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  gap: 0.25rem 0.5rem;
+  font-size: 1.5rem;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  color: var(--wp--preset--color--primary, #e3e1e1);
+}
+
+.event-countdown__timer span {
+  padding: 0 0.25rem;
+}
+
+.event-countdown__placeholder {
+  padding: 1rem;
+  background: var(--wp--preset--color--dark-background, #1a1a1a);
+  color: var(--wp--preset--color--primary, #e3e1e1);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .event-countdown__timer {
+    transition: none;
+  }
+}

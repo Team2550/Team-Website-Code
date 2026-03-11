@@ -1,0 +1,17 @@
+/**
+ * Event Details Block
+ * Matches sponsor post-terms styling: labeled meta with separator.
+ */
+
+.wp-block-skynet2550-event-details {
+	font-size: 0.875rem;
+}
+
+.wp-block-skynet2550-event-details .event-details__prefix {
+	font-weight: 600;
+}
+
+.wp-block-skynet2550-event-details .event-details__separator {
+	opacity: 0.6;
+	white-space: pre-wrap;
+}

@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/block.json",
+  "apiVersion": 3,
+  "name": "skynet2550/event-time",
+  "title": "Event Time",
+  "category": "theme",
+  "description": "Display the event time. Use inside a Query Loop for event post type.",
+  "textdomain": "skynet2550",
+  "usesContext": ["postId", "postType", "queryId"],
+  "attributes": {
+    "showPrefix": { "type": "boolean", "default": false }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

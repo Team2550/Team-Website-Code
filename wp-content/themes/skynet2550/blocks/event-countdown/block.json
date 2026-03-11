@@ -1,0 +1,26 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/block.json",
+	"apiVersion": 3,
+	"name": "skynet2550/event-countdown",
+	"title": "Event Countdown",
+	"category": "theme",
+	"description": "Display a live countdown (days : hours : minutes : seconds) to a specified date and time.",
+	"textdomain": "skynet2550",
+	"attributes": {
+		"eventName": {
+			"type": "string",
+			"default": ""
+		},
+		"targetDateTime": {
+			"type": "string",
+			"default": ""
+		}
+	},
+	"supports": {
+		"html": false,
+		"align": ["wide", "full"]
+	},
+	"editorScript": "file:./index.js",
+	"viewScript": "file:./view.js",
+	"style": "file:./style.css"
+}

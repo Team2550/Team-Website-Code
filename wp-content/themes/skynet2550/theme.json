@@ -1,0 +1,173 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/theme.json",
+	"settings": {
+		"appearanceTools": true,
+		"layout": {
+			"contentSize": "1200px",
+			"wideSize": "1200px"
+		},
+		"spacing": {
+			"units": [ "%", "px", "em", "rem", "vh", "vw" ]
+		},
+		"color": {
+			"palette": [
+				{
+					"color": "#E3E1E1",
+					"name": "Primary",
+					"slug": "primary"
+				},
+				{
+					"color": "#FF0000",
+					"name": "Secondary",
+					"slug": "secondary"
+				},
+				{
+					"color": "#FA2B2B",
+					"name": "Tertiary",
+					"slug": "tertiary"
+				},
+				{
+					"color": "#444444",
+					"name": "Gray",
+					"slug": "gray"
+				},
+				{
+					"color": "#FA2B2B",
+					"name": "Black",
+					"slug": "black"
+				},
+				{
+					"color": "#333333",
+					"name": "Background",
+					"slug": "background"
+				},
+				{
+					"color": "#1A1A1A",
+					"name": "Dark Background",
+					"slug": "dark-background"
+				}
+			],
+			"gradients": [
+				{
+					"gradient": "linear-gradient(to right, #1A1A1A, #333333)",
+					"name": "Dark to Less Dark",
+					"slug": "dark-to-less-light"
+				}
+			]
+		},
+		"typography": {
+			"fontFamilies": [
+				{
+					"fontFamily": "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif",
+					"name": "Base Font",
+					"slug": "base-font"
+				},
+			{
+				"fontFace": [
+					{
+						"fontFamily": "New Academy",
+						"fontStyle": "normal",
+						"fontWeight": "400",
+						"src": [ "file:./assets/fonts/new-academy.woff2" ]
+					}
+				],
+				"fontFamily": "'New Academy', serif",
+				"name": "Heading Font",
+				"slug": "heading-font"
+			}
+			],
+			"defaultFontSizes": [
+				{
+					"name": "Small",
+					"size": "0.875rem",
+					"slug": "small"
+				},
+				{
+					"name": "Medium",
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"name": "Large",
+					"size": "1.5rem",
+					"slug": "large"
+				},
+				{
+					"name": "Extra Large",
+					"size": "2rem",
+					"slug": "x-large"
+				}
+			],
+			"defaultFontFamily": "'Segoe UI', -apple-system, BlinkMacSystemFont, 'Roboto', 'Oxygen', 'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif"
+		},
+		"useRootPaddingAwareAlignments": true
+	},
+	"styles": {
+		"color": {
+			"background": "var(--wp--preset--color--background)",
+			"text": "var(--wp--preset--color--primary)"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--base-font)"
+		},
+		"spacing": {
+			"blockGap": "0px"
+		},
+		"blocks": {
+			"core/post-content": {
+				"spacing": {
+					"margin": {
+						"top": "0px"
+					}
+				}
+			}
+		},
+		"elements": {
+			"heading": {
+				"color": {
+					"text": "var(--wp--preset--color--secondary)"
+				},
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--heading-font)",
+					"fontWeight": "400"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--tertiary)"
+				}
+			},
+			"h1": {
+				"typography": {
+					"fontSize": "4rem"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontSize": "3rem"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontSize": "2rem"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontSize": "1rem"
+				}
+			}
+		}
+	},
+	"templateParts": [
+		{
+			"area": "header",
+			"name": "header"
+		},
+		{
+			"area": "footer",
+			"name": "footer"
+		}
+	],
+	"version": 3
+}

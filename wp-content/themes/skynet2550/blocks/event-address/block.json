@@ -1,0 +1,16 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/block.json",
+  "apiVersion": 3,
+  "name": "skynet2550/event-address",
+  "title": "Event Address",
+  "category": "theme",
+  "description": "Display the event address. Use inside a Query Loop for event post type.",
+  "textdomain": "skynet2550",
+  "usesContext": ["postId", "postType", "queryId"],
+  "attributes": {
+    "showPrefix": { "type": "boolean", "default": true }
+  },
+  "supports": { "html": false },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

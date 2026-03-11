@@ -1,0 +1,15 @@
+{
+	"$schema": "https://schemas.wp.org/wp/6.9/block.json",
+	"apiVersion": 3,
+	"name": "skynet2550/event-details",
+	"title": "Event Details",
+	"category": "theme",
+	"description": "Display event date, time, location name, and address. Use inside a Query Loop for event post type.",
+	"textdomain": "skynet2550",
+	"usesContext": [ "postId", "postType" ],
+	"supports": {
+		"align": [ "wide", "full" ],
+		"html": false
+	},
+	"style": "file:./style.css"
+}

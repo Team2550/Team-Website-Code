@@ -1,0 +1,25 @@
+{
+  "$schema": "https://schemas.wp.org/wp/6.9/block.json",
+  "apiVersion": 3,
+  "name": "skynet2550/sponsor-logos-scroll",
+  "title": "Sponsor Logos Scroll",
+  "category": "theme",
+  "description": "Display sponsor logos in a scrolling marquee.",
+  "textdomain": "skynet2550",
+  "attributes": {
+    "sponsorGroup": {
+      "type": "string",
+      "default": ""
+    },
+    "sponsorYear": {
+      "type": "string",
+      "default": ""
+    }
+  },
+  "supports": {
+    "align": ["wide", "full"],
+    "html": false
+  },
+  "editorScript": "file:./index.js",
+  "style": "file:./style.css"
+}

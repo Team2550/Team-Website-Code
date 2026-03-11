@@ -3,8 +3,8 @@
    ======================================== */
 
 @font-face {
-  font-family: 'New Academy';
-  src: url('/wp-content/themes/skynet2550/assets/fonts/new-academy.woff2') format('woff2');
+  font-family: "New Academy";
+  src: url("/wp-content/themes/skynet2550/assets/fonts/new-academy.woff2") format("woff2");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -28,8 +28,8 @@
 }
 
 /* Remove list styles on ul, ol elements with a list role */
-ul[role='list'],
-ol[role='list'] {
+ul[role="list"],
+ol[role="list"] {
   list-style: none;
 }
 
@@ -116,21 +116,20 @@ blockquote::before,
 blockquote::after,
 q::before,
 q::after {
-  content: '';
+  content: "";
   content: none;
 }
-
 
 /* ========================================
    Base CSS Variables
    ======================================== */
 
- :root {
-    --border-radius--large: 25px;
-    --border-radius--small: 10px;
-    --box-shadow--large: 0 0 25px 0 rgba(0, 0, 0, 0.1);
-    --box-shadow--small: 0 0 10px 0 rgba(0, 0, 0, 0.1);
- }
+:root {
+  --border-radius--large: 25px;
+  --border-radius--small: 10px;
+  --box-shadow--large: 0 0 25px 0 rgba(0, 0, 0, 0.1);
+  --box-shadow--small: 0 0 10px 0 rgba(0, 0, 0, 0.1);
+}
 
 /* ========================================
    Base CSS Standards
@@ -143,6 +142,10 @@ body {
   background-color: var(--wp--preset--color--background);
 }
 
+.text__upper {
+  text-transform: uppercase;
+}
+
 /* Headings */
 h1,
 h2,
@@ -153,6 +156,8 @@ h6 {
   font-family: var(--wp--preset--font-family--heading-font);
   color: var(--wp--preset--color--secondary);
   font-weight: normal;
+  line-height: 0.8;
+  /* -webkit-text-stroke: 1px white; */
 }
 
 /* Links */
@@ -171,10 +176,24 @@ a:focus {
 button,
 .button,
 input[type="submit"],
-input[type="button"] {
-  background-color: var(--wp--preset--color--tertiary);
+input[type="button"],
+.wp-block-button__link {
+  background-color: var(--wp--preset--color--secondary);
   color: var(--wp--preset--color--primary);
   transition: background-color 0.2s ease;
+  --bevel-size: var(--border-radius--small, 25px);
+  clip-path: polygon(
+    var(--bevel-size) 0,
+    calc(100% - var(--bevel-size)) 0,
+    100% var(--bevel-size),
+    100% calc(100% - var(--bevel-size)),
+    calc(100% - var(--bevel-size)) 100%,
+    var(--bevel-size) 100%,
+    0 calc(100% - var(--bevel-size)),
+    0 var(--bevel-size)
+  );
+  corner-shape: bevel;
+  border-radius: var(--bevel-size);
 }
 
 button:hover,
@@ -184,11 +203,46 @@ button:focus,
 input[type="submit"]:hover,
 input[type="submit"]:focus,
 input[type="button"]:hover,
-input[type="button"]:focus {
-  background-color: var(--wp--preset--color--secondary);
+input[type="button"]:focus,
+.wp-block-button__link:hover {
+  color: var(--wp--preset--color--secondary);
+  background-color: var(--wp--preset--color--primary);
 }
 
 img {
   border-radius: var(--border-radius--large);
   box-shadow: var(--box-shadow--large);
+}
+
+/* Layout */
+.flex__stretch {
+  display: flex;
+  align-items: stretch;
+  justify-content: stretch;
+}
+
+.flex__center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex__reverse {
+  flex-direction: row-reverse;
+}
+
+.bevel {
+  --bevel-size: var(--border-radius--small, 25px);
+  clip-path: polygon(
+    var(--bevel-size) 0,
+    calc(100% - var(--bevel-size)) 0,
+    100% var(--bevel-size),
+    100% calc(100% - var(--bevel-size)),
+    calc(100% - var(--bevel-size)) 100%,
+    var(--bevel-size) 100%,
+    0 calc(100% - var(--bevel-size)),
+    0 var(--bevel-size)
+  );
+  corner-shape: bevel;
+  border-radius: var(--bevel-size);
 }

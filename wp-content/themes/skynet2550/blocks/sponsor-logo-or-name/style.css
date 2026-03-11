@@ -1,0 +1,26 @@
+/**
+ * Sponsor Logo or Name Block
+ */
+
+.sponsor-logo-or-name {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 150px;
+  background: var(--wp--preset--color--background, #333);
+}
+
+.sponsor-logo-or-name img {
+  max-height: 150px;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.sponsor-logo-or-name__name {
+  font-size: 1.25rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--wp--preset--color--primary, #e3e1e1);
+}

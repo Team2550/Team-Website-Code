@@ -1,0 +1,75 @@
+/**
+ * Sponsor Logos Scroll Block - Front-end styles
+ */
+
+.wp-block-skynet2550-sponsor-logos-scroll {
+  padding: 1.5rem 0;
+  background: var(--wp--preset--color--dark-background, #1a1a1a);
+}
+
+.sponsor-logos-scroll__track {
+  display: flex;
+  gap: 2rem;
+  width: max-content;
+  animation: sponsor-logos-scroll 40s linear infinite;
+}
+
+.sponsor-logos-scroll__track:hover {
+  animation-play-state: paused;
+}
+
+.sponsor-logos-scroll__logos {
+  display: flex;
+  gap: 2rem;
+  flex-shrink: 0;
+  padding: 0 1rem;
+}
+
+.sponsor-logos-scroll__item {
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 80px;
+  width: 160px;
+}
+
+.sponsor-logos-scroll__item img {
+  max-height: 100%;
+  max-width: 100%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.sponsor-logos-scroll__item a {
+  display: flex;
+}
+
+.sponsor-logos-scroll__item .sponsor-logos-scroll__name {
+  font-size: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--wp--preset--color--primary, #e3e1e1);
+  line-height: 1.2;
+  word-break: break-word;
+  padding: 0 0.5rem;
+}
+
+@keyframes sponsor-logos-scroll {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .sponsor-logos-scroll__track {
+    animation: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+  }
+}
